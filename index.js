@@ -44,9 +44,9 @@ const check = () => {
   }
 };
 const disablebtn = () => {
-  for (let BOX of AllBoxes) {
-    BOX.style.pointerEvents = "none";
-    // BOX.disabled = true;
+  for (let Box of AllBoxes) {
+    // Box.style.pointerEvents = "none";
+    Box.disabled = true;
   }
 };
 const ResetGame = () => {
@@ -54,9 +54,9 @@ const ResetGame = () => {
   enablebtn();
 };
 const enablebtn = () => {
-  for (let Box1 of AllBoxes) {
-    Box1.disabled = false;
-    Box1.innerText = "";
+  for (let Box of AllBoxes) {
+    Box.disabled = false;
+    Box.innerText = "";
   }
 };
 let Resetbutton = document.querySelector(".resetbtn");
